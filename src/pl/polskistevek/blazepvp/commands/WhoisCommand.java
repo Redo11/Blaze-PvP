@@ -5,7 +5,10 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
 import pl.polskistevek.blazepvp.utils.Config;
+import pl.polskistevek.blazepvp.utils.Utils;
+import pl.polskistevek.blazepvp.utils.titleapi.TitleAPI;
 
 public class WhoisCommand implements CommandExecutor {
     @Override
@@ -25,7 +28,7 @@ public class WhoisCommand implements CommandExecutor {
             return false;
         }
         TitleAPI.sendTitle((Player) sender, 10, 70, 10, "&8[&cWhoIS&8]", "&7Pobrano Informacje!");
-        Bukkit.broadcast(ChatUtil.fix(" &8[&cWhoIS&8] &7Gracz &6" + sender.getName() + " &7sprawdza informacje o: &c" + other.getName()), "stiv.chat");
+        //Bukkit.broadcast(ChatUtil.fix(" &8[&cWhoIS&8] &7Gracz &6" + sender.getName() + " &7sprawdza informacje o: &c" + other.getName()), "stiv.chat");
         sender.sendMessage(ChatUtil.fix("    &8&m-------------&8 ( >> &c&lWHOIS &8<< ) &8&m-------------&8 "));
         sender.sendMessage(ChatUtil.fix(" &8>> &6Nick: &7") + other.getName());
         sender.sendMessage(ChatUtil.fix(" &8>> &6DisplayName: &7") + other.getDisplayName());

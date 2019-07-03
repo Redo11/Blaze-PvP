@@ -1,18 +1,19 @@
 package pl.polskistevek.blazepvp.commands;
+
 import org.bukkit.GameMode;
-        import org.bukkit.command.Command;
-        import org.bukkit.command.CommandExecutor;
-        import org.bukkit.command.CommandSender;
-        import org.bukkit.entity.Player;
-        import pl.polskistevek.core.utils.ChatUtil;
-        import pl.polskistevek.core.utils.Config;
-        import pl.polskistevek.core.utils.Utils;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
+import pl.polskistevek.blazepvp.utils.Config;
+import pl.polskistevek.blazepvp.utils.Utils;
 
 public class GamemodeCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
-        String permission = Config.getString("permission") + "gm";
+        String permission = Config.perm + ".gm";
         if (p.hasPermission(permission)) {
             switch (args[0]) {
                 case "0":

@@ -17,7 +17,7 @@ messages:
 
 items:
   1:
-    type: HOPPER
+    type: AIR
     name: "&2Puste Pole :)"
     lore: "&6Puste Pole :)"
   2:
@@ -25,32 +25,32 @@ items:
     name: "&cDodatki!"
     lore: "&7Kliknij ,aby Wybrac &2Dodatek!"
   3:
-    type: HOPPER
+    type: AIR
     name: "&2Puste Pole :)"
     lore: "&6Puste Pole :)"
   4:
     type: PAPER
-    name: "&2Sklep z Rangami!"
+    name: "&3Sklep!"
     lore: "&7Kliknij ,aby zakupic range za uzbierane monety!"
   5:
     type: WATCH
-    name: "&4&lWybierz &6&lTryb!"
-    lore: "&7Opis przedmiotu!"
+    name: "&eWybierz &6Tryb!"
+    lore: "&7Kliknij Lewym ,aby wybrac Tryb!"
   6:
-    type: HOPPER
+    type: AIR
     name: "&2Puste Pole :)"
     lore: "&6Puste Pole :)"
   7:
-    type: HOPPER
+    type: AIR
     name: "&2Puste Pole :)"
     lore: "&6Puste Pole :)"
   8:
     type: FEATHER
-    name: "&eTryb Latania(&6Putin&c+&b+)!"
-    lore: "&7Mozesz latac po lobby ,jedynym wymogiem jest ranga &6Putin&c+&b+!"
+    name: "&eTryb Latania &7(&6Putin&c+&b+&7)!"
+    lore: "&7Mozesz latac po lobby jedynym wymogiem jest ranga &6Putin&c+&b+!"
   9:
     type: ENDER_PEARL
-    name: "&cMagiczna Pelra!"
+    name: "&bMagiczna Pelra!"
     lore: "&7Rzuc i lec jak najdalej!"
 Locations:
   spawn:

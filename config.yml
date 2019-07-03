@@ -16,17 +16,17 @@ messages:
 
 items:
   1:
-    type: AIR
-    name: ""
-    lore: ""
+    type: HOPPER
+    name: "&2Puste Pole :)"
+    lore: "&6Puste Pole :)"
   2:
     type: CHEST
     name: "&cDodatki!"
     lore: "&7Kliknij ,aby Wybrac &2Dodatek!"
   3:
-    type: AIR
-    name: ""
-    lore: ""
+    type: HOPPER
+    name: "&2Puste Pole :)"
+    lore: "&6Puste Pole :)"
   4:
     type: PAPER
     name: "&2Sklep z Rangami!"
@@ -36,13 +36,13 @@ items:
     name: "&4&lWybierz &6&lTryb!"
     lore: "&7Opis przedmiotu!"
   6:
-    type: AIR
-    name: ""
-    lore: ""
+    type: HOPPER
+    name: "&2Puste Pole :)"
+    lore: "&6Puste Pole :)"
   7:
-    type: AIR
-    name: ""
-    lore: ""
+    type: HOPPER
+    name: "&2Puste Pole :)"
+    lore: "&6Puste Pole :)"
   8:
     type: FEATHER
     name: "&eTryb Latania(&6Putin&c+&b+)!"

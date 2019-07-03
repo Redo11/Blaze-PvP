@@ -26,7 +26,18 @@ public class Blaze extends JavaPlugin {
         getCommand("help").setExecutor(new HelpCommand());
         getCommand("list").setExecutor(new ListCommand());
         getCommand("blaze").setExecutor(new BlazeCommand());
+        getCommand("yt+").setExecutor(new (YTPlusCommand));
+        getCommand("miniyt").setExecutor(new MiniYtCommand());
+        getCommand("putin").setExecutor(new PutinCommand());
+        getCommand("discord").setExecutor(new DiscordCommand());
+        getCommand("kosz").setExecutor(new KoszCommand());
+        getCommand("whois").setExecutor(new WhoisCommand());
+        getCommand("www").setExecutor(new WwwCommand());
+
+
     }
+
+
     private void registerListeners(){
         pm.registerEvents(new PlayerChatListener(), this);
         pm.registerEvents(new PlayerQuitListener(), this);

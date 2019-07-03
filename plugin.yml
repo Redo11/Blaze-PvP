@@ -20,3 +20,20 @@ commands:
     description: Lista graczy
   blaze:
     description: Reloadowanie core
+    yt+:
+     description: Komenda yt+
+     miniyt:
+      description: informacje o miniyt
+  putin:
+   description: Informacje o randze putin
+    live:
+  description: Inroamcje o liveach.
+   kosz:
+    description: usuwanie syf itków
+  discord:
+     description: link do dc
+  www:
+   description: Strona www
+     whois:
+       description:  ip gracza itp info
+

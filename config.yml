@@ -13,6 +13,7 @@ messages:
   join: "&6>&a>&c> &7Gracz &6{PLAYER} &7dolaczyl na serwer!"
   quit: "&6>&a>&c> &7Gracz &c{PLAYER} &7wyszedl!"
   chat-format: "&8<&7{PLAYER}&8> &7{MSG}"
+  chat-format-op: "&8<&c{PLAYER}&8> &6{MSG}"
 
 items:
   1:
@@ -32,7 +33,7 @@ items:
     name: "&2Sklep z Rangami!"
     lore: "&7Kliknij ,aby zakupic range za uzbierane monety!"
   5:
-    type: CLOCK
+    type: WATCH
     name: "&4&lWybierz &6&lTryb!"
     lore: "&7Opis przedmiotu!"
   6:

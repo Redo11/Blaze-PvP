@@ -9,6 +9,10 @@ import pl.polskistevek.blazepvp.utils.Config;
 public class PlayerChatListener implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e){
-        e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format").replace("{PLAYER}", e.getPlayer().getName()).replace("{MSG}", e.getMessage())));
+        if (!e.getPlayer().isOp()) {
+            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format").replace("{PLAYER}", e.getPlayer().getName()).replace("{MSG}", e.getMessage())));
+        } else{
+            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format-op").replace("{PLAYER}", e.getPlayer().getName()).replace("{MSG}", e.getMessage())));
+        }
     }
 }

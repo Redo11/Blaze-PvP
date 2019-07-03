@@ -1,5 +1,6 @@
 package pl.polskistevek.blazepvp.listeners;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -25,14 +26,32 @@ public class PlayerJoinListener implements Listener {
         ItemBuilder item6 = new ItemBuilder(Config.getMaterial("items.7.type")).setTitle(ChatUtil.fix(Config.getString("items.7.name"))).addLore(ChatUtil.fix(Config.getString("items.7.lore")));
         ItemBuilder item7 = new ItemBuilder(Config.getMaterial("items.8.type")).setTitle(ChatUtil.fix(Config.getString("items.8.name"))).addLore(ChatUtil.fix(Config.getString("items.8.lore")));
         ItemBuilder item8 = new ItemBuilder(Config.getMaterial("items.9.type")).setTitle(ChatUtil.fix(Config.getString("items.9.name"))).addLore(ChatUtil.fix(Config.getString("items.9.lore")));
-        p.getInventory().setItem(0, item0.build());
-        p.getInventory().setItem(1, item1.build());
-        p.getInventory().setItem(2, item2.build());
-        p.getInventory().setItem(3, item3.build());
-        p.getInventory().setItem(4, item4.build());
-        p.getInventory().setItem(5, item5.build());
-        p.getInventory().setItem(6, item6.build());
-        p.getInventory().setItem(7, item7.build());
-        p.getInventory().setItem(8, item8.build());
+        if (Config.getMaterial("items.1.type") != null || Config.getMaterial("items.1.type") != Material.AIR) {
+            p.getInventory().setItem(0, item0.build());
+        }
+        if (Config.getMaterial("items.2.type") != null || Config.getMaterial("items.2.type") != Material.AIR) {
+            p.getInventory().setItem(1, item1.build());
+        }
+        if (Config.getMaterial("items.3.type") != null || Config.getMaterial("items.3.type") != Material.AIR) {
+            p.getInventory().setItem(2, item2.build());
+        }
+        if (Config.getMaterial("items.4.type") != null || Config.getMaterial("items.4.type") != Material.AIR) {
+            p.getInventory().setItem(3, item3.build());
+        }
+        if (Config.getMaterial("items.5.type") != null || Config.getMaterial("items.5.type") != Material.AIR) {
+            p.getInventory().setItem(4, item4.build());
+        }
+        if (Config.getMaterial("items.6.type") != null || Config.getMaterial("items.6.type") != Material.AIR) {
+            p.getInventory().setItem(5, item5.build());
+        }
+        if (Config.getMaterial("items.7.type") != null || Config.getMaterial("items.7.type") != Material.AIR) {
+            p.getInventory().setItem(6, item6.build());
+        }
+        if (Config.getMaterial("items.8.type") != null || Config.getMaterial("items.8.type") != Material.AIR) {
+            p.getInventory().setItem(7, item7.build());
+        }
+        if (Config.getMaterial("items.9.type") != null || Config.getMaterial("items.9.type") != Material.AIR) {
+            p.getInventory().setItem(8, item8.build());
+        }
     }
 }

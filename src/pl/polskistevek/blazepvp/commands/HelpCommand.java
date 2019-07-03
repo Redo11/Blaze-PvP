@@ -10,8 +10,8 @@ public class HelpCommand implements CommandExecutor {
         sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &c&lPOMOC &8<< ) &8&m-------------&8 "));
         sender.sendMessage(ChatUtil.fix(" &8>> &6/youtuber &8- &7Informacje o randze YouTuber."));
         sender.sendMessage(ChatUtil.fix(" &8>> &6/putin -informacje o randze Putin."));
-        sender.sendMessage(ChatUtil.fix(" &8>> &6/efekty &8- &7Sklep z efektami."));
-        sender.sendMessage(ChatUtil.fix(" &8>> &6/schowek &8- &7Depozyt koxow perel oraz refów."));
+        sender.sendMessage(ChatUtil.fix(" &8>> &6/miniyt &8- &7Informajce O Randze YouTuber ."));
+        sender.sendMessage(ChatUtil.fix(" &8>> &6/Live &8- &7Pokazuje osobyprowadzace Streama z serwera."));
         sender.sendMessage(ChatUtil.fix(" &8>> &6/helpop <wiadomosc> &8- &7Szybki Kontakt z Administracja."));
         sender.sendMessage(ChatUtil.fix(" &8>> &6/enderchest &8- &7Otwiera enderchest."));
         sender.sendMessage(ChatUtil.fix(" &8>> &6/kosz &8- &7Puste menu do wrzucania smieci."));

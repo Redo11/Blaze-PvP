@@ -1,10 +1,11 @@
 package pl.polskistevek.blazepvp.commands;
+
 import org.bukkit.Bukkit;
-        import org.bukkit.command.Command;
-        import org.bukkit.command.CommandExecutor;
-        import org.bukkit.command.CommandSender;
-        import org.bukkit.entity.Player;
-        import pl.polskistevek.core.utils.ChatUtil;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
 
 public class HelpopCommand implements CommandExecutor {
     @Override

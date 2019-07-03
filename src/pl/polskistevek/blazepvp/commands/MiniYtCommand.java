@@ -5,7 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import pl.polskistevek.blazepvp.utils.ChatUtil;
 
-public class MiniYtcommand implements CommandExecutor {
+public class MiniYtCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &c&lYOUTUBE &8<< ) &8&m-------------&8 "));
         sender.sendMessage(ChatUtil.fix(" &8>> &cWwymagania: &230 &7Subskrypcji +&5Odcinek z serwera."));

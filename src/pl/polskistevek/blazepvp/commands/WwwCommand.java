@@ -9,3 +9,6 @@ public class WwwCommand implements CommandExecutor {
         sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &2&lSTRONA INTRNETOWA &8<< ) &8&m-------------&8 "));
         sender.sendMessage(ChatUtil.fix(" &8  >>>STRONA: AKTUALNIE BRAK :(                                                    "));
         sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &2&lSTRONA INETRENTOWA &8<< ) &8&m-------------&8"));
+        return false;
+    }
+}

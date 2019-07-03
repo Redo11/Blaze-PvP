@@ -1,13 +1,11 @@
 package pl.polskistevek.blazepvp.commands;
+
 import org.bukkit.Bukkit;
-        import org.bukkit.command.Command;
-        import org.bukkit.command.CommandExecutor;
-        import org.bukkit.command.CommandSender;
-        import org.bukkit.entity.Player;
-        import pl.polskistevek.core.utils.ChatUtil;
-        import pl.polskistevek.core.utils.Config;
-        import pl.polskistevek.core.utils.Utils;
-        import pl.polskistevek.core.utils.titleapi.TitleAPI;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.Config;
 
 public class WhoisCommand implements CommandExecutor {
     @Override

@@ -1,1 +1,57 @@
-prefix: "&8[&6Blaze&8] "
+# _  ______  _   _ ______ _____ _____ _    _ _____            _____     _
+#| |/ / __ \| \ | |  ____|_   _/ ____| |  | |  __ \     /\   / ____|   | |  /\
+#| ' / |  | |  \| | |__    | || |  __| |  | | |__) |   /  \ | |        | | /  \
+#|  <| |  | | . ` |  __|   | || | |_ | |  | |  _  /   / /\ \| |    _   | |/ /\ \
+#| . \ |__| | |\  | |     _| || |__| | |__| | | \ \  / ____ \ |___| |__| / ____ \
+#|_|\_\____/|_| \_|_|    |_____\_____|\____/|_|  \_\/_/    \_\_____\____/_/    \_\
+
+prefix: "&8[&6Blaze&8] &c"
+ip: "StivHC.GA"
+permission-prefix: "shc"
+
+messages:
+  join: "&6>&a>&c> &7Gracz &6{NICK} &7dolaczyl na serwer!"
+  quit: "&6>&a>&c> &7Gracz &c{NICK} &7wyszedl!"
+
+items:
+  1:
+    type: STONE
+    name: "&cNazwa itemku 1!"
+    lore: "&7Opis przedmiotu 1!"
+  2:
+    type: STONE
+    name: "&cNazwa itemku 2!"
+    lore: "&7Opis przedmiotu!"
+  3:
+    type: STONE
+    name: "&cNazwa itemku 3!"
+    lore: "&7Opis przedmiotu!"
+  4:
+    type: STONE
+    name: "&cNazwa itemku 4!"
+    lore: "&7Opis przedmiotu!"
+  5:
+    type: STONE
+    name: "&cNazwa itemku 5!"
+    lore: "&7Opis przedmiotu!"
+  6:
+    type: STONE
+    name: "&cNazwa itemku 6!"
+    lore: "&7Opis przedmiotu!"
+  7:
+    type: STONE
+    name: "&cNazwa itemku 7!"
+    lore: "&7Opis przedmiotu!"
+  8:
+    type: STONE
+    name: "&cNazwa itemku 8!"
+    lore: "&7Opis przedmiotu!"
+  9:
+    type: STONE
+    name: "&cNazwa itemku 9!"
+    lore: "&7Opis przedmiotu!"
+Locations:
+  spawn:
+    x: -1.6614781097771485
+    y: 68.0
+    z: 3.1166450782474575

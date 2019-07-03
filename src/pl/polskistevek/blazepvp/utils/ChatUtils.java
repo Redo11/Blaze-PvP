@@ -1,9 +1,14 @@
-package pl.polskistevek.blazepvp;
+package pl.polskistevek.blazepvp.utils;
+
+import net.md_5.bungee.api.ChatColor;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
 
 public class ChatUtils {
 
     public static String fix(String text) {
-        return ChatColor.translateAlternateColorCodes('&', text.replace(">>", "»").replace("%tag", Utils.getString("prefix")).replace("<<", "«"));
+        return ChatColor.translateAlternateColorCodes('&', text.replace(">>", "»").replace("%tag%", Config.getString("prefix")).replace("<<", "«"));
     }
 
     public static String getStringFromArg(String[] args){
@@ -14,17 +19,13 @@ public class ChatUtils {
         return sb.toString();
     }
 
-    public static void sendMessage(final Player p, final String t) {
-        p.sendMessage(fixColor(t));
-    }
-
     public static String locToString(final Location loc) {
         return loc.getX() + ":" + loc.getY() + ":" + loc.getZ() + ":" + loc.getYaw() + ":" + loc.getPitch();
     }
 
     public static Location locFromString(final String str) {
         final String[] str2loc = str.split(":");
-        final Location loc = new Location((World) Bukkit.getWorlds().get(0), 0.0, 0.0, 0.0, 0.0f, 0.0f);
+        final Location loc = new Location(Bukkit.getWorlds().get(0), 0.0, 0.0, 0.0, 0.0f, 0.0f);
         loc.setX(Double.parseDouble(str2loc[0]));
         loc.setY(Double.parseDouble(str2loc[1]));
         loc.setZ(Double.parseDouble(str2loc[2]));

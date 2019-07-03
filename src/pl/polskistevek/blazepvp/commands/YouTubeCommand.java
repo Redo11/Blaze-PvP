@@ -1,4 +1,19 @@
 package pl.polskistevek.blazepvp.commands;
 
-public class YouTubeCommand {
+import org.bukkit.command.Command;
+
+public class YouTubecommand {
 }
+
+        import org.bukkit.command.Command;
+        import org.bukkit.command.CommandExecutor;
+        import org.bukkit.command.CommandSender;
+        import pl.polskistevek.core.utils.ChatUtil;
+
+public class YouTubecommand implements CommandExecutor {
+    public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
+        sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &c&lYOUTUBE &8<< ) &8&m-------------&8 "));
+        sender.sendMessage(ChatUtil.fix(" &8>> &cWwymagania: &2100 &7Subskrypcji +&5Odcinek z serwera."));
+        sender.sendMessage(ChatUtil.fix(" &8>> &6Posiada Permisje rangi &ePutiN&c+&b+"));
+        sender.sendMessage(ChatUtil.fix(" &8>> &6+Permisje do /live "));
+        sender.sendMessage(ChatUtil.fix(" &8>> &6Specjalny prefix na chacie &7[&cYoutu&fber&7]"+ + Sender.getName()));

@@ -8,12 +8,29 @@
 prefix: "&8[&6Blaze&8] &c"
 ip: "StivHC.GA"
 permission-prefix: "shc"
+slots: 100
 
 messages:
+  join-title: "&2STIVHC.GA"
+  join-subtitle: "&6Serwer PVP! Beta Testy!"
   join: "&6>&a>&c> &7Gracz &6{PLAYER} &7dolaczyl na serwer!"
   quit: "&6>&a>&c> &7Gracz &c{PLAYER} &7wyszedl!"
   chat-format: "&8<&7{PLAYER}&8> &7{MSG}"
   chat-format-op: "&8<&c{PLAYER}&8> &6{MSG}"
+  unknown-cmd: "Nie istnieje taka komenda! Sprawdz /pomoc"
+motd:
+  description: "%tag% &cBeta Testy Core pod serwer PVP!\n%tag% &cStart za kilka tygodni!"
+scoreboard:
+  lobby:
+    title: "&6STIVHC.GA"
+    1: "1"
+    2: "2"
+    3: "3"
+    4: "4"
+    5: "5"
+    6: "6"
+    7: "7"
+    8: "8"
 
 items:
   1:

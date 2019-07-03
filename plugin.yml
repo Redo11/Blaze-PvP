@@ -1,8 +1,22 @@
 name: Blaze-PvP
 main: pl.polskistevek.blazepvp.Blaze
-version: dev-03.07.2019
+version: 1.0dev-03.07.2019
+authors: [PolskiStevek, jambosmaha]
+depend: [Blaze-API]
 
 commands:
   setspawn:
-    aliases: setlobby
-  test:
+    description: Ustawianie lobby glownego serwera
+  yt:
+    description: Informacje o Randze YT
+    aliases: youtube
+  tp:
+    description: Teleportacja do gracza
+  help:
+    aliases: pomoc
+    description: Lista dostepnych komend
+  list:
+    aliases: online
+    description: Lista graczy
+  blaze:
+    description: Reloadowanie core

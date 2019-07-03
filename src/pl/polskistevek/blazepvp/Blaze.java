@@ -30,12 +30,12 @@ public class Blaze extends JavaPlugin {
         getCommand("miniyt").setExecutor(new MiniYtCommand());
         getCommand("putin").setExecutor(new PutinCommand());
         getCommand("discord").setExecutor(new DiscordCommand());
-        getCommand("kosz").setExecutor(new KoszCommand());
+        getCommand("putin++").setExecutor(new PutinPlusPlusCommand());
         getCommand("whois").setExecutor(new WhoisCommand());
         getCommand("www").setExecutor(new WwwCommand());
-
-
-    }
+        getCommand("putin+").setExecutor(new PutinPlusCommand());
+        getCommand("ts3").setExecutor(new TeamSpeakCommand());
+        getCommand("live").setExecutor(new LiveCommand());
 
 
     private void registerListeners(){

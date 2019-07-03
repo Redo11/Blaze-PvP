@@ -19,21 +19,35 @@ commands:
     aliases: online
     description: Lista graczy
   blaze:
-    description: Reloadowanie core
-    yt+:
+   description: Reloadowanie core + info
+  yt+:
      description: Komenda yt+
-     miniyt:
-      description: informacje o miniyt
-  putin:
+ miniyt:
+   description: informacje o miniyt
+putin:
    description: Informacje o randze putin
-    live:
+live:
   description: Inroamcje o liveach.
-   kosz:
-    description: usuwanie syf itków
+ kosz:
+  description: usuwanie syf itków
   discord:
-     description: link do dc
+    description: link do dc
   www:
    description: Strona www
-     whois:
-       description:  ip gracza itp info
+  whois:
+   description:  ip gracza itp info
+ putin+:
+   description: Info o putinie +
+  putin++:
+   description: Info o putinie ++
+  ts3:
+   description: Informajce o teamspeaku
+  gamemode:
+    description: Zmiana trybu gry
+   helpop:
+    description: Kontakt z administracja
+  vanish:
+    description: Niewidzialnosc
+
+
 

@@ -16,41 +16,41 @@ messages:
 
 items:
   1:
-    type: STONE
-    name: "&cNazwa itemku 1!"
-    lore: "&7Opis przedmiotu 1!"
+    type: air
+    name: "&cWybierz Tryb!"
+    lore: "&7Kliknij ,aby wybrac Tryb!"
   2:
-    type: STONE
-    name: "&cNazwa itemku 2!"
-    lore: "&7Opis przedmiotu!"
+    type: CHEST
+    name: "&cDodatki!"
+    lore: "&7Kliknij ,aby Wybrac &2Dodatek!"
   3:
-    type: STONE
-    name: "&cNazwa itemku 3!"
+    type: air
+    name: "&cNazwa itemku!"
     lore: "&7Opis przedmiotu!"
   4:
-    type: STONE
-    name: "&cNazwa itemku 4!"
-    lore: "&7Opis przedmiotu!"
+    type: PAPER
+    name: "&2Sklep z Rangami!"
+    lore: "&7Kliknij ,aby zakupic range za uzbierane monety!"
   5:
-    type: STONE
-    name: "&cNazwa itemku 5!"
+    type: CLOCK
+    name: "&4&lWybierz &6&lTryb!"
     lore: "&7Opis przedmiotu!"
   6:
-    type: STONE
-    name: "&cNazwa itemku 6!"
+    type: air
+    name: "&cNazwa itemku!"
     lore: "&7Opis przedmiotu!"
   7:
-    type: STONE
-    name: "&cNazwa itemku 7!"
+    type: air
+    name: "&cNazwa itemku!"
     lore: "&7Opis przedmiotu!"
   8:
-    type: STONE
-    name: "&cNazwa itemku 8!"
-    lore: "&7Opis przedmiotu!"
+    type: FEATHER
+    name: "&eTryb Latania(&6Putin&c+&b+)!"
+    lore: "&7Mozesz latac po lobby ,jedynym wymogiem jest ranga &6Putin&c+&b+!"
   9:
-    type: STONE
-    name: "&cNazwa itemku 9!"
-    lore: "&7Opis przedmiotu!"
+    type: ENDER_PEARL
+    name: "&cMagiczna Pelra!"
+    lore: "&7Rzuc i lec jak najdalej!"
 Locations:
   spawn:
     x: -1.6614781097771485

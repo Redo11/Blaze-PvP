@@ -1,22 +1,19 @@
 package pl.polskistevek.blazepvp.commands;
 
-public class TpCommand {
-}
 import org.bukkit.Bukkit;
-        import org.bukkit.command.Command;
-        import org.bukkit.command.CommandExecutor;
-        import org.bukkit.command.CommandSender;
-        import org.bukkit.entity.Player;
-        import pl.polskistevek.core.utils.ChatUtil;
-        import pl.polskistevek.core.utils.Config;
-        import pl.polskistevek.core.utils.Utils;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
+import pl.polskistevek.blazepvp.utils.Config;
 
 public class TpCommand implements CommandExecutor {
 
     public boolean onCommand(final CommandSender sender, final Command cmd, final String label, final String[] args) {
         String permission = Config.getString("permission") + "tp";
         if (!sender.hasPermission(permission)) {
-            Utils.noPermission((Player) sender, permission);
+            sender.sendMessage(ChatUtil.fix(Config.noperm));
             return false;
         }
         final Player player = (Player)sender;

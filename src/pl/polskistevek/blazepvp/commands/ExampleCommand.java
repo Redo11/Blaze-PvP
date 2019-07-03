@@ -3,12 +3,12 @@ package pl.polskistevek.blazepvp.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import pl.polskistevek.blazepvp.utils.ChatUtils;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
 
 public class ExampleCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        sender.sendMessage(ChatUtils.fix("%tag%&cPlugin dziala poprawnie!"));
+        sender.sendMessage(ChatUtil.fix("%tag%&cPlugin dziala poprawnie!"));
         return false;
     }
 }

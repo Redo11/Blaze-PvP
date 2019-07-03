@@ -1,13 +1,9 @@
 package pl.polskistevek.blazepvp.commands;
 
 import org.bukkit.command.Command;
-
-public class HelpCommand {
-}
-import org.bukkit.command.Command;
-        import org.bukkit.command.CommandExecutor;
-        import org.bukkit.command.CommandSender;
-        import pl.polskistevek.core.utils.ChatUtil;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
 
 public class HelpCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {

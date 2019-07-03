@@ -10,8 +10,9 @@ ip: "StivHC.GA"
 permission-prefix: "shc"
 
 messages:
-  join: "&6>&a>&c> &7Gracz &6{NICK} &7dolaczyl na serwer!"
-  quit: "&6>&a>&c> &7Gracz &c{NICK} &7wyszedl!"
+  join: "&6>&a>&c> &7Gracz &6{PLAYER} &7dolaczyl na serwer!"
+  quit: "&6>&a>&c> &7Gracz &c{PLAYER} &7wyszedl!"
+  chat-format: "&8<&7{PLAYER}&8> &7{MSG}"
 
 items:
   1:

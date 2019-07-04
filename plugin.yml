@@ -48,6 +48,11 @@ live:
     description: Kontakt z administracja
   vanish:
     description: Niewidzialnosc
-
+ administracja:
+   description: Admini nie w gui xd
+  gang:
+    description: Blad
+  gang info:
+    description: Informacjena temat gangow
 
 

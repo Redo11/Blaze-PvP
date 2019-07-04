@@ -36,8 +36,9 @@ public class Blaze extends JavaPlugin {
         getCommand("putin+").setExecutor(new PutinPlusCommand());
         getCommand("ts3").setExecutor(new TeamSpeakCommand());
         getCommand("live").setExecutor(new LiveCommand());
-
-
+        getCommand("administracja").setExecutor(new AdminiCommand());
+        getCommand("gang").setExecutor(new GangbladCommand());
+        getCommand("gang info").setExecutor(new GangInfoCommand());
     private void registerListeners(){
         pm.registerEvents(new PlayerChatListener(), this);
         pm.registerEvents(new PlayerQuitListener(), this);

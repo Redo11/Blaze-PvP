@@ -12,6 +12,7 @@ public class PutinCommand implements CommandExecutor {
         sender.sendMessage(ChatUtil.fix(" &8>> &6Permisje:&b/feed,/team zaloz,/ubgrade,/hat,..."));
         sender.sendMessage(ChatUtil.fix(" &8>> &6Posiadanie rangi na serwerze wiaze sie z specjalna rola na discordzie"));
         sender.sendMessage(ChatUtil.fix(" &8>> &6Specjalny prefix na chacie &7[&2Putin&7] " + sender.getName()));
+        sender.sendMessage(ChatUtil.fix("     &8&m-------------&8 ( >> &6&lPUTIN &8<< ) &8&m-------------&8 "));
         return false;
     }
 }

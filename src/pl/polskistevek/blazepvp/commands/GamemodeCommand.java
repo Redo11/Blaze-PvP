@@ -15,17 +15,21 @@ public class GamemodeCommand implements CommandExecutor {
         Player p = (Player) sender;
         String permission = Config.perm + ".gm";
         if (p.hasPermission(permission)) {
+            if (args.length < 1) {
+                p.sendMessage(ChatUtil.fix("%tag%Poprawne uzycie &6/gm <0/1/3>"));
+                return false;
+            }
             switch (args[0]) {
                 case "0":
-                    p.sendMessage(ChatUtil.fix("%tag &2Ustawiono tryb gry na: &6SURVIVAL"));
+                    p.sendMessage(ChatUtil.fix("%tag%Ustawiono tryb gry na: &6SURVIVAL"));
                     p.setGameMode(GameMode.SURVIVAL);
                     break;
                 case "1":
-                    p.sendMessage(ChatUtil.fix("%tag &2Ustawiono tryb gry na: &6CREATIVE"));
+                    p.sendMessage(ChatUtil.fix("%tag%Ustawiono tryb gry na: &6CREATIVE"));
                     p.setGameMode(GameMode.CREATIVE);
                     break;
                 case "3":
-                    p.sendMessage(ChatUtil.fix("%tag &2Ustawiono tryb gry na: &6SPECTATOR"));
+                    p.sendMessage(ChatUtil.fix("%tag%Ustawiono tryb gry na: &6SPECTATOR"));
                     p.setGameMode(GameMode.SPECTATOR);
                     break;
                 default:

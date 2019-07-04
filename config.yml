@@ -5,75 +5,42 @@
 #| . \ |__| | |\  | |     _| || |__| | |__| | | \ \  / ____ \ |___| |__| / ____ \
 #|_|\_\____/|_| \_|_|    |_____\_____|\____/|_|  \_\/_/    \_\_____\____/_/    \_\
 
-prefix: "&8[&6Blaze&8] &c"
-ip: "StivHC.GA"
-permission-prefix: "shc"
-slots: 100
-
+prefix: '&8[&6Blaze&8] &c'
+ip: StivHC.GA
+permission-prefix: shc
+slots: '100'
 messages:
-  join-title: "&2STIVHC.GA"
-  join-subtitle: "&6Serwer PVP! Beta Testy!"
-  join: "&6>&a>&c> &7Gracz &6{PLAYER} &7dolaczyl na serwer!"
-  quit: "&6>&a>&c> &7Gracz &c{PLAYER} &7wyszedl!"
-  chat-format: "&8<&7{PLAYER}&8> &7{MSG}"
-  chat-format-op: "&8<&c{PLAYER}&8> &6{MSG}"
-  unknown-cmd: "Nie istnieje taka komenda! Sprawdz /pomoc"
+  join-title: '&2STIVHC.GA'
+  join-subtitle: '&6Serwer PVP! Beta Testy!'
+  join: '&8[&a+&8] &6{PLAYER} &adolaczyl!'
+  quit: '&8[&c-&8] &6{PLAYER} &cwyszedl!'
+  chat-format: '{TAG}{POINTS} {GROUP}{PLAYER}&8: &f{MSG}'
+  chat-format-op: '{TAG}{POINTS} {GROUP}{PLAYER}&8: &6{MSG}'
+  chat-format-helper: '{TAG}{POINTS} {GROUP}{PLAYER}&8: &b{MSG}'
+  unknown-cmd: Nie istnieje taka komenda! Sprawdz /pomoc
 motd:
-  description: "%tag% &cBeta Testy Core pod serwer PVP!\n%tag% &cStart za kilka tygodni!"
+  description: |-
+    %tag% &cBeta Testy Core pod serwer PVP!
+    %tag% &cStart za kilka tygodni!
 bans:
-  kick-message: "&c&lZOSTALES WYRZUCONY\n&7Wyrzucil cie: &4{ADM}\n&7Powod: &c{POWOD}"
-  kick-broadcast: "%tag%&cGracz &4{NICK} &czostal wyrzucony przez &4{ADM} &cza: &4{POWOD}"
+  kick-message: |-
+    &6&lZOSTALES WYRZUCONY
+    &7Wyrzucil cie: &c{ADM}
+    &7Powod: &6{POWOD}
+  kick-broadcast: '&cGracz &4{NICK} &czostal wyrzucony przez &4{ADM} &aza: &c{POWOD}'
 scoreboard:
   lobby:
-    title: "&6STIVHC.GA"
-    1: "1"
-    2: "2"
-    3: "3"
-    4: "4"
-    5: "5"
-    6: "6"
-    7: "7"
-    8: "8"
-
-items:
-  1:
-    type: AIR
-    name: "&2Puste Pole :)"
-    lore: "&6Puste Pole :)"
-  2:
-    type: CHEST
-    name: "&cDodatki!"
-    lore: "&7Kliknij ,aby Wybrac &2Dodatek!"
-  3:
-    type: AIR
-    name: "&2Puste Pole :)"
-    lore: "&6Puste Pole :)"
-  4:
-    type: PAPER
-    name: "&3Sklep!"
-    lore: "&7Kliknij ,aby zakupic range za uzbierane monety!"
-  5:
-    type: WATCH
-    name: "&eWybierz &6Tryb!"
-    lore: "&7Kliknij Lewym ,aby wybrac Tryb!"
-  6:
-    type: AIR
-    name: "&2Puste Pole :)"
-    lore: "&6Puste Pole :)"
-  7:
-    type: AIR
-    name: "&2Puste Pole :)"
-    lore: "&6Puste Pole :)"
-  8:
-    type: FEATHER
-    name: "&eTryb Latania &7(&6Putin&c+&b+&7)!"
-    lore: "&7Mozesz latac po lobby jedynym wymogiem jest ranga &6Putin&c+&b+!"
-  9:
-    type: ENDER_PEARL
-    name: "&bMagiczna Pelra!"
-    lore: "&7Rzuc i lec jak najdalej!"
+    title: '&6STIVHC.GA'
+    '1': '&1'
+    '2': '2'
+    '3': '3'
+    '4': '4'
+    '5': '5'
+    '6': '6'
+    '7': '7'
+    '8': '&8'
 Locations:
   spawn:
-    x: -1.6614781097771485
-    y: 68.0
-    z: 3.1166450782474575
+    x: 99.8600902292065
+    y: 189.0
+    z: 105.8354844494677

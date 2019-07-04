@@ -20,6 +20,8 @@ public class Blaze extends JavaPlugin {
         registerCommands();
         registerListeners();
         Bukkit.getWorld("world").setDifficulty(Difficulty.PEACEFUL);
+        Bukkit.broadcastMessage(ChatUtil.fix("%tag%Plugin stworzony przez PolskiStevek oraz Jambosmaha"));
+        Bukkit.broadcastMessage(ChatUtil.fix("%tag%Wersja: &6" + Blaze.getPlugin().getDescription().getVersion()));
     }
 
     private void registerCommands() {
@@ -49,6 +51,9 @@ public class Blaze extends JavaPlugin {
             Bukkit.broadcastMessage(ChatUtil.fix("%tag% Wystapil blad w kodzie: " + Arrays.toString(e.getStackTrace())));
         }
     }
+    public void onDisable(){
+        Bukkit.broadcastMessage(ChatUtil.fix("%tag%Restartowanie pluginu, wystapi lag..."));
+    }
     private void registerListeners(){
         pm.registerEvents(new PlayerChatListener(), this);
         pm.registerEvents(new PlayerQuitListener(), this);
@@ -57,6 +62,9 @@ public class Blaze extends JavaPlugin {
         pm.registerEvents(new ServerListListener(), this);
         pm.registerEvents(new PlayerDamageListener(), this);
         pm.registerEvents(new BlockBreakPlaceListener(), this);
+        pm.registerEvents(new InventoryClickListener(), this);
+        pm.registerEvents(new PlayerPickupListener(), this);
+        pm.registerEvents(new AntiCropTrampleListener(), this);
     }
 
     public static Blaze getPlugin() {

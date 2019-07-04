@@ -4,7 +4,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class ChatUtil {
     public static String fix(String text) {
-        return ChatColor.translateAlternateColorCodes('&', text.replace(">>", "»").replace("%tag%", Config.getString("prefix")).replace("<<", "«"));
+        return ChatColor.translateAlternateColorCodes('&', text.replace(">>", "»").replace("%tag%", Config.getString("prefix")).replace("%tag", Config.getString("prefix")).replace("<<", "«"));
     }
 
     public static String getStringFromArg(String[] args){

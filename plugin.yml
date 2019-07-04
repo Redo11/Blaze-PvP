@@ -1,6 +1,6 @@
 name: Blaze-PvP
 main: pl.polskistevek.blazepvp.Blaze
-version: 1.1dev-03.07.2019
+version: 1.2dev-03.07.2019
 authors: [PolskiStevek, jambosmaha]
 softdepend: [Blaze-API]
 

@@ -44,6 +44,20 @@ public class Config {
         loc.setZ(Double.parseDouble(getString("Locations.spawn.z")));
         return loc;
     }
+    public static Location getArena(String arena){
+        final Location loc = new Location(Bukkit.getWorld(Config.getString("Locations." + arena + ".world")), 0.0, 0.0, 0.0, 0.0f, 0.0f);
+        loc.setX(Double.parseDouble(getString("Locations." + arena + ".x")));
+        loc.setY(Double.parseDouble(getString("Locations." + arena + ".y")));
+        loc.setZ(Double.parseDouble(getString("Locations." + arena + ".z")));
+        return loc;
+    }
+
+    public static void setArena(String arena, Location str){
+        getConfig().set("Locations." + arena + ".x", str.getX());
+        getConfig().set("Locations." + arena + ".y", str.getY());
+        getConfig().set("Locations." + arena + ".z", str.getZ());
+        getConfig().set("Locations." + arena + ".world", str.getWorld().getName());
+    }
 
     public static void setSpawn(final Location str){
         getConfig().set("Locations.spawn.x", str.getX());

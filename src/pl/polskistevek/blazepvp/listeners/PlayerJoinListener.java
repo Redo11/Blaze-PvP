@@ -10,6 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import pl.polskistevek.blazepvp.Blaze;
+import pl.polskistevek.blazepvp.managers.UserManager;
 import pl.polskistevek.blazepvp.utils.ChatUtil;
 import pl.polskistevek.blazepvp.utils.Config;
 import pl.polskistevek.blazepvp.utils.ItemBuilder;
@@ -21,6 +22,7 @@ public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e){
         Player p = e.getPlayer();
+        UserManager.createUser(p);
         SidebarString line1 = new SidebarString(ChatUtil.fix(Config.getString("scoreboard.lobby.1").replace("{PLAYER}", p.getName()).replace("{RANK}", PermissionsEx.getUser(p).getGroupNames()[0]).replace("{ONLINE}", Bukkit.getOnlinePlayers().size() + "")));
         SidebarString line2 = new SidebarString(ChatUtil.fix(Config.getString("scoreboard.lobby.2").replace("{PLAYER}", p.getName()).replace("{RANK}", PermissionsEx.getUser(p).getGroupNames()[0]).replace("{ONLINE}", Bukkit.getOnlinePlayers().size() + "")));
         SidebarString line3 = new SidebarString(ChatUtil.fix(Config.getString("scoreboard.lobby.3").replace("{PLAYER}", p.getName()).replace("{RANK}", PermissionsEx.getUser(p).getGroupNames()[0]).replace("{ONLINE}", Bukkit.getOnlinePlayers().size() + "")));

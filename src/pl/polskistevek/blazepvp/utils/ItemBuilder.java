@@ -60,7 +60,7 @@ public class ItemBuilder {
 
     public ItemBuilder setColor(final Color color) {
         if (!this.mat.name().contains("LEATHER_")) {
-            throw new IllegalArgumentException("Can only dye leather armor!");
+            throw new IllegalArgumentException("Czerwona diaxowa zbroja... Nie ma opcji, użyj skórzanej!");
         }
         this.color = color;
         return this;
@@ -70,7 +70,7 @@ public class ItemBuilder {
         Material mat = this.mat;
         if (mat == null) {
             mat = Material.AIR;
-            Bukkit.getLogger().warning("Null material!");
+            Bukkit.getLogger().warning("Powietrze, to nie jest dobry pomysł...");
         }
         final ItemStack item = new ItemStack(this.mat, this.amount, this.data);
         final ItemMeta meta = item.getItemMeta();

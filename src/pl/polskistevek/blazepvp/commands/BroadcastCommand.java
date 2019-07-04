@@ -1,14 +1,18 @@
 package pl.polskistevek.blazepvp.commands;
-                import org.bukkit.Bukkit;
-                import org.bukkit.command.Command;
-                import org.bukkit.command.CommandExecutor;
-                import org.bukkit.command.CommandSender;
-                import org.bukkit.entity.Player;
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import pl.polskistevek.blazepvp.utils.ChatUtil;
+import pl.polskistevek.blazepvp.utils.Config;
+import pl.polskistevek.blazepvp.utils.Utils;
+import pl.polskistevek.blazepvp.utils.titleapi.TitleAPI;
 
 public class BroadcastCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        String permission = Config.getString("permission") + "bc";
+        String permission = Config.perm + ".bc";
         if (sender.hasPermission(permission)){
             if (args.length == 0){
                 sender.sendMessage("Podaj wiadomosc!");

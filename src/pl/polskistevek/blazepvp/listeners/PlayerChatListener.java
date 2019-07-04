@@ -10,9 +10,9 @@ public class PlayerChatListener implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e){
         if (!e.getPlayer().isOp()) {
-            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format").replace("{PLAYER}", e.getPlayer().getName()).replace("{MSG}", e.getMessage())));
+            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format").replace("{PLAYER}", e.getPlayer().getDisplayName()).replace("{MSG}", e.getMessage())));
         } else{
-            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format-op").replace("{PLAYER}", e.getPlayer().getName()).replace("{MSG}", e.getMessage())));
+            e.setFormat(ChatUtil.fix(Config.getString("messages.chat-format-op").replace("{PLAYER}", e.getPlayer().getDisplayName()).replace("{MSG}", e.getMessage())));
         }
     }
 }

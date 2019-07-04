@@ -1,8 +1,8 @@
 name: Blaze-PvP
 main: pl.polskistevek.blazepvp.Blaze
-version: 1.0dev-03.07.2019
+version: 1.1dev-03.07.2019
 authors: [PolskiStevek, jambosmaha]
-depend: [Blaze-API]
+softdepend: [Blaze-API]
 
 commands:
   setspawn:
@@ -19,40 +19,36 @@ commands:
     aliases: online
     description: Lista graczy
   blaze:
-   description: Reloadowanie core + info
+    description: Reloadowanie core + info
   yt+:
-     description: Komenda yt+
- miniyt:
+    description: Komenda yt+
+  miniyt:
    description: informacje o miniyt
-putin:
-   description: Informacje o randze putin
-live:
-  description: Inroamcje o liveach.
- kosz:
-  description: usuwanie syf itków
+  putin:
+    description: Informacje o randze putin
+  live:
+    description: Inroamcje o liveach.
   discord:
     description: link do dc
-  www:
-   description: Strona www
-  whois:
-   description:  ip gracza itp info
- putin+:
-   description: Info o putinie +
+  putin+:
+    description: Info o putinie +
   putin++:
-   description: Info o putinie ++
-  ts3:
-   description: Informajce o teamspeaku
+    description: Info o putinie ++
   gamemode:
+    aliases: gm
     description: Zmiana trybu gry
-   helpop:
+  helpop:
     description: Kontakt z administracja
-  vanish:
-    description: Niewidzialnosc
- administracja:
-   description: Admini nie w gui xd
   gang:
     description: Blad
-  gang info:
-    description: Informacjena temat gangow
-
-
+  whois:
+    description: informacje o graczu
+  bc:
+    aliases: broadcast
+    description: Broadcast
+  fly:
+    description: Latanie
+  heal:
+    description: Leczenie
+  kick:
+    description: Wyrzucanie

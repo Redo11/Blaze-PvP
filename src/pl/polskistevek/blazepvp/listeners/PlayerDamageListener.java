@@ -9,6 +9,12 @@ import pl.polskistevek.blazepvp.utils.Config;
 public class PlayerDamageListener implements Listener {
     @EventHandler
     public void onDamage(EntityDamageByEntityEvent e) {
+        if (e.getDamager().getWorld().getName().equals("world")){
+            e.setCancelled(true);
+            if (e.getCause().equals(EntityDamageEvent.DamageCause.VOID)){
+                e.getEntity().teleport(Config.getSpawn());
+            }
+        }
         if (e.getEntity().getWorld().getName().equals("world")) {
             e.setCancelled(true);
             if (e.getCause().equals(EntityDamageEvent.DamageCause.VOID)){

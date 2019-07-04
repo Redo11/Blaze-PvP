@@ -20,6 +20,9 @@ messages:
   unknown-cmd: "Nie istnieje taka komenda! Sprawdz /pomoc"
 motd:
   description: "%tag% &cBeta Testy Core pod serwer PVP!\n%tag% &cStart za kilka tygodni!"
+bans:
+  kick-message: "&c&lZOSTALES WYRZUCONY\n&7Wyrzucil cie: &4{ADM}\n&7Powod: &c{POWOD}"
+  kick-broadcast: "%tag%&cGracz &4{NICK} &czostal wyrzucony przez &4{ADM} &cza: &4{POWOD}"
 scoreboard:
   lobby:
     title: "&6STIVHC.GA"
